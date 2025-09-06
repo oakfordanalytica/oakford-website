@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="preconnect" href="https://db.onlinewebfonts.com" crossorigin>
+    <link rel="preload" href="https://db.onlinewebfonts.com/t/4571adf8e6d8270ea61a4f43a3ef31d2.woff2" as="font"
+        type="font/woff2" crossorigin>
+    <link href="https://db.onlinewebfonts.com/c/4571adf8e6d8270ea61a4f43a3ef31d2?family=Departure+Mono" rel="stylesheet"
+        crossorigin="anonymous">
+    <link href="oakford_favicon.png" rel="shortcut icon" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style data-merge-styles="true"></style>
+    <style data-merge-styles="true"></style>
+    <style data-merge-styles="true"></style>
+    <style>
+        .wf-force-outline-none[tabindex="-1"]:focus {
+            outline: none;
+        }
+    </style>
+    <title>Oakford Analytica — Digital automation & scientific optimization</title>
+    <meta name="description"
+        content="Oakford Analytica is a Colombian company at the forefront of digital automation and scientific process optimization. We combine mathematics, data science and machine learning to design intelligent strategies that deliver measurable operational improvements.">
+    <meta property="og:title" content="Oakford Analytica">
+    <meta property="og:description"
+        content="Oakford Analytica integrates scientific methodologies with advanced technologies to streamline workflows, enhance decision-making, and deliver impactful, measurable results across industries.">
+    <meta property="twitter:title" content="Oakford Analytica">
+    <meta property="twitter:description"
+        content="Oakford Analytica integrates scientific methodologies with advanced technologies to streamline workflows, enhance decision-making, and deliver impactful, measurable results across industries.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="keywords"
+        content="digital automation, process optimization, data science, machine learning, analytics, Colombia">
+    <style>
+        /* Local bold font provided in public/ */
+        @font-face {
+            font-family: 'PPNeuebit';
+            src: url('public/mondwest-neuebit-font-1757145600-0/ppneuebit-bold.otf') format('opentype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo-container {
+            text-align: center;
+            position: relative;
+            display: inline-block;
+        }
+
+        .timestamp {
+            position: absolute;
+            top: -28px;
+            left: 0;
+            color: #ffffA3;
+            opacity: 0.75;
+            font-size: 13px;
+            font-family: "PPNeuebit", system-ui, monospace;
+            letter-spacing: 1px;
+            background: rgba(0, 0, 0, 0.0);
+            padding: 0 4px;
+            white-space: nowrap;
+        }
+
+        .animated-logo {
+            width: 180px;
+            max-width: 100%;
+            height: auto;
+            /* keep aspect ratio */
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Animaciones para los diferentes grupos de cuadros */
+        /* Visibility of logo-group elements is controlled by JS which toggles
+           display:block / display:none for each square according to the
+           original keyframe timing (3s loop). */
+        .logo-group-1,
+        .logo-group-2,
+        .logo-group-3,
+        .logo-group-4,
+        .logo-group-5 {
+            display: block;
+            /* default; visibility toggled by script */
+        }
+
+        @keyframes fadeInOut1 {
+
+            0%,
+            20% {
+                opacity: 1;
+            }
+
+            40%,
+            60% {
+                opacity: 0.3;
+            }
+
+            80%,
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInOut2 {
+
+            0%,
+            10% {
+                opacity: 0.3;
+            }
+
+            30%,
+            50% {
+                opacity: 1;
+            }
+
+            70%,
+            90% {
+                opacity: 0.3;
+            }
+
+            100% {
+                opacity: 0.3;
+            }
+        }
+
+        @keyframes fadeInOut3 {
+
+            0%,
+            30% {
+                opacity: 0.2;
+            }
+
+            50%,
+            70% {
+                opacity: 1;
+            }
+
+            90%,
+            100% {
+                opacity: 0.2;
+            }
+        }
+
+        @keyframes fadeInOut4 {
+
+            0%,
+            40% {
+                opacity: 1;
+            }
+
+            60%,
+            80% {
+                opacity: 0.4;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInOut5 {
+
+            0%,
+            15% {
+                opacity: 0.4;
+            }
+
+            35%,
+            55% {
+                opacity: 0.8;
+            }
+
+            75%,
+            95% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.4;
+            }
+        }
+
+        .brand {
+            color: #fffc;
+            margin-top: 18px;
+            font-size: 24px;
+            letter-spacing: 1.5px;
+            font-family: "PPNeuebit", system-ui, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            text-transform: uppercase;
+        }
+
+        .visual-line-wrapper {
+            grid-column-gap: .25rem;
+            grid-row-gap: .25rem;
+            flex-flow: column;
+            width: 50%;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .visual-line-wrapper.opacity-75 {
+            opacity: .75;
+            width: 100%;
+        }
+
+        .visual-line {
+            height: 1px;
+            max-height: 1px;
+            min-height: 1px;
+            background-color: #fff3;
+            width: 100%;
+        }
+    </style>
+    <script>
+        // Chequeo simple para ver si el navegador carga la fuente remote
+        if (document && document.fonts && document.fonts.load) {
+            document.fonts.load('1em "Departure Mono"').then(function () {
+                console.log('Departure Mono: loaded');
+            }).catch(function () {
+                console.warn('Departure Mono: failed to load');
+            });
+        } else {
+            console.warn('Font Loading API not supported in this browser');
+        }
+    </script>
+</head>
+
+<body>
+    <div class="logo-container">
+        <div class="timestamp" id="timestamp">▩ --</div>
+        <svg class="animated-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 128 80" width="128" height="80" preserveAspectRatio="xMidYMid meet"
+            style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
+            <defs>
+                <clipPath id="__lottie_element_15">
+                    <rect width="128" height="80" x="0" y="0"></rect>
+                </clipPath>
+            </defs>
+            <g clip-path="url(#__lottie_element_15)">
+                <g class="logo-group-1" style="display: block;" transform="matrix(1,0,0,1,0,0)" opacity="1">
+                    <g opacity="1" transform="matrix(1,0,0,1,120,32)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M-8,15.99899959564209 C-8,15.99899959564209 8,15.99899959564209 8,15.99899959564209 C8,15.99899959564209 8,-15.99899959564209 8,-15.99899959564209 C8,-15.99899959564209 -8,-15.99899959564209 -8,-15.99899959564209 C-8,-15.99899959564209 -8,15.99899959564209 -8,15.99899959564209z">
+                        </path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,104,48)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,16 C8,16 -8,16 -8,16 C-8,16 -8,-16 -8,-16 C-8,-16 8,-16 8,-16 C8,-16 8,16 8,16z">
+                        </path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,56,64)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M-8,16 C-8,16 8,16 8,16 C8,16 8,-16 8,-16 C8,-16 -8,-16 -8,-16 C-8,-16 -8,16 -8,16z">
+                        </path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,88,40)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,72,40)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,8,40)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M-8,7.999000072479248 C-8,7.999000072479248 8,7.999000072479248 8,7.999000072479248 C8,7.999000072479248 8,-7.999000072479248 8,-7.999000072479248 C8,-7.999000072479248 -8,-7.999000072479248 -8,-7.999000072479248 C-8,-7.999000072479248 -8,7.999000072479248 -8,7.999000072479248z">
+                        </path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,40,40)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,24,8)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,24,32)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,16 C8,16 -8,16 -8,16 C-8,16 -8,-16 -8,-16 C-8,-16 8,-16 8,-16 C8,-16 8,16 8,16z">
+                        </path>
+                    </g>
+                </g>
+                <g class="logo-group-2" style="display: block;" transform="matrix(1,0,0,1,0,0)" opacity="1">
+                    <g opacity="1" transform="matrix(1,0,0,1,120,64)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M-8,16 C-8,16 8,16 8,16 C8,16 8,-16 8,-16 C8,-16 -8,-16 -8,-16 C-8,-16 -8,16 -8,16z">
+                        </path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,104,16)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,16 C8,16 -8,16 -8,16 C-8,16 -8,-16 -8,-16 C-8,-16 8,-16 8,-16 C8,-16 8,16 8,16z">
+                        </path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,56,64)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M-8,16 C-8,16 8,16 8,16 C8,16 8,-16 8,-16 C8,-16 -8,-16 -8,-16 C-8,-16 -8,16 -8,16z">
+                        </path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,88,40)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,72,40)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,8,40)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M-8,7.999000072479248 C-8,7.999000072479248 8,7.999000072479248 8,7.999000072479248 C8,7.999000072479248 8,-7.999000072479248 8,-7.999000072479248 C8,-7.999000072479248 -8,-7.999000072479248 -8,-7.999000072479248 C-8,-7.999000072479248 -8,7.999000072479248 -8,7.999000072479248z">
+                        </path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,40,40)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,56,8)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,24,32)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,16 C8,16 -8,16 -8,16 C-8,16 -8,-16 -8,-16 C-8,-16 8,-16 8,-16 C8,-16 8,16 8,16z">
+                        </path>
+                    </g>
+                </g>
+                <g class="logo-group-3" style="display: block;" transform="matrix(1,0,0,1,0,0)" opacity="1">
+                    <g opacity="1" transform="matrix(1,0,0,1,103.9990005493164,64)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M-7.999000072479248,16 C-7.999000072479248,16 8,16 8,16 C8,16 8,-16 8,-16 C8,-16 -7.999000072479248,-16 -7.999000072479248,-16 C-7.999000072479248,-16 -7.999000072479248,16 -7.999000072479248,16z">
+                        </path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,120,16)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M-8,16 C-8,16 8,16 8,16 C8,16 8,-16 8,-16 C8,-16 -8,-16 -8,-16 C-8,-16 -8,16 -8,16z">
+                        </path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,56,64)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M-8,16 C-8,16 8,16 8,16 C8,16 8,-16 8,-16 C8,-16 -8,-16 -8,-16 C-8,-16 -8,16 -8,16z">
+                        </path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,88,56)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,72,40)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,8,8)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M-8,8 C-8,8 8,8 8,8 C8,8 8,-8 8,-8 C8,-8 -8,-8 -8,-8 C-8,-8 -8,8 -8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,40,24)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,72,8)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,24,48)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,16 C8,16 -8,16 -8,16 C-8,16 -8,-16 -8,-16 C-8,-16 8,-16 8,-16 C8,-16 8,16 8,16z">
+                        </path>
+                    </g>
+                </g>
+                <g class="logo-group-4" style="display: block;" transform="matrix(1,0,0,1,0,0)" opacity="1">
+                    <g opacity="1" transform="matrix(1,0,0,1,103.9990005493164,64)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M-7.999000072479248,16 C-7.999000072479248,16 8,16 8,16 C8,16 8,-16 8,-16 C8,-16 -7.999000072479248,-16 -7.999000072479248,-16 C-7.999000072479248,-16 -7.999000072479248,16 -7.999000072479248,16z">
+                        </path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,120,16)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M-8,16 C-8,16 8,16 8,16 C8,16 8,-16 8,-16 C8,-16 -8,-16 -8,-16 C-8,-16 -8,16 -8,16z">
+                        </path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,56,64)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M-8,16 C-8,16 8,16 8,16 C8,16 8,-16 8,-16 C8,-16 -8,-16 -8,-16 C-8,-16 -8,16 -8,16z">
+                        </path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,88,56)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,72,40)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,8,40)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M-8,7.999000072479248 C-8,7.999000072479248 8,7.999000072479248 8,7.999000072479248 C8,7.999000072479248 8,-7.999000072479248 8,-7.999000072479248 C8,-7.999000072479248 -8,-7.999000072479248 -8,-7.999000072479248 C-8,-7.999000072479248 -8,7.999000072479248 -8,7.999000072479248z">
+                        </path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,40,24)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,72,8)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,24,32)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,16 C8,16 -8,16 -8,16 C-8,16 -8,-16 -8,-16 C-8,-16 8,-16 8,-16 C8,-16 8,16 8,16z">
+                        </path>
+                    </g>
+                </g>
+                <g class="logo-group-5" style="display: block;" transform="matrix(1,0,0,1,0,0)" opacity="1">
+                    <g opacity="1" transform="matrix(1,0,0,1,120,32)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M-8,15.99899959564209 C-8,15.99899959564209 8,15.99899959564209 8,15.99899959564209 C8,15.99899959564209 8,-15.99899959564209 8,-15.99899959564209 C8,-15.99899959564209 -8,-15.99899959564209 -8,-15.99899959564209 C-8,-15.99899959564209 -8,15.99899959564209 -8,15.99899959564209z">
+                        </path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,104,48)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,16 C8,16 -8,16 -8,16 C-8,16 -8,-16 -8,-16 C-8,-16 8,-16 8,-16 C8,-16 8,16 8,16z">
+                        </path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,56,64)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M-8,16 C-8,16 8,16 8,16 C8,16 8,-16 8,-16 C8,-16 -8,-16 -8,-16 C-8,-16 -8,16 -8,16z">
+                        </path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,88,40)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,72,40)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,8,40)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M-8,7.999000072479248 C-8,7.999000072479248 8,7.999000072479248 8,7.999000072479248 C8,7.999000072479248 8,-7.999000072479248 8,-7.999000072479248 C8,-7.999000072479248 -8,-7.999000072479248 -8,-7.999000072479248 C-8,-7.999000072479248 -8,7.999000072479248 -8,7.999000072479248z">
+                        </path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,40,40)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,24,8)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,8 C8,8 -8,8 -8,8 C-8,8 -8,-8 -8,-8 C-8,-8 8,-8 8,-8 C8,-8 8,8 8,8z"></path>
+                    </g>
+                    <g opacity="1" transform="matrix(1,0,0,1,24,32)">
+                        <path fill="rgb(255,255,255)" fill-opacity="1"
+                            d=" M8,16 C8,16 -8,16 -8,16 C-8,16 -8,-16 -8,-16 C-8,-16 8,-16 8,-16 C8,-16 8,16 8,16z">
+                        </path>
+                    </g>
+                </g>
+            </g>
+        </svg>
+
+        <h1 class="brand ">Oakford Analytica</h1>
+
+
+        <div class="visual-line-wrapper opacity-75">
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line _50"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+        </div>
+    </div>
+</body>
+
+<script>
+    // Smoother, phase-shifted display toggle pattern to avoid visible restart.
+    (function () {
+        const duration = 3000; // ms per loop
+
+        // Phase offsets for each group (fraction of the loop). Staggered to
+        // create a flowing pattern. Values in [0,1).
+        const offsets = {
+            1: 0.00,
+            2: 0.15,
+            3: 0.30,
+            4: 0.45,
+            5: 0.60
+        };
+
+        // Threshold on sinusoidal value to decide visibility. Lower makes
+        // visible regions wider; tweak for desired density.
+        const threshold = 0.05;
+
+        // Gather groups and their drawable children
+        const groups = [1, 2, 3, 4, 5].map(i => {
+            const el = document.querySelector('.logo-group-' + i);
+            const children = el ? Array.from(el.querySelectorAll('g, path, rect, circle, ellipse, polygon, polyline')) : [];
+            const prev = new Array(children.length).fill(null);
+            return { index: i, el, children, prev };
+        });
+
+        function visibleForPhase(phase, offset) {
+            // phase and offset are 0..1; compute phase-shifted sine
+            const p = (phase + offset) % 1;
+            const v = Math.sin(2 * Math.PI * p);
+            return v > threshold; // boolean
+        }
+
+        function update() {
+            const now = performance.now();
+            const phase = ((now % duration) / duration); // 0..1
+
+            groups.forEach(g => {
+                if (!g.el) return;
+                const offset = offsets[g.index] || 0;
+                const visible = visibleForPhase(phase, offset);
+                // Only update DOM when child's visible state changes to reduce jank
+                g.children.forEach((child, idx) => {
+                    if (g.prev[idx] !== visible) {
+                        child.style.display = visible ? 'block' : 'none';
+                        g.prev[idx] = visible;
+                    }
+                });
+            });
+
+            requestAnimationFrame(update);
+        }
+
+        // Start once DOM is ready
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+            requestAnimationFrame(update);
+        } else {
+            document.addEventListener('DOMContentLoaded', () => requestAnimationFrame(update));
+        }
+    })();
+</script>
+
+<script>
+    // Update timestamp every second in format: ▩ Sat 6 ( 09 ) 2025 09:52:37
+    (function () {
+        const el = document.getElementById('timestamp');
+        if (!el) return;
+
+        const pad = (n) => n.toString().padStart(2, '0');
+        const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+        function update() {
+            const d = new Date();
+            const dayName = weekdays[d.getDay()];
+            const day = d.getDate();
+            const month = pad(d.getMonth() + 1);
+            const year = d.getFullYear();
+            const hh = pad(d.getHours());
+            const mm = pad(d.getMinutes());
+            const ss = pad(d.getSeconds());
+
+            el.textContent = `▩ ${dayName} ${day} ( ${month} ) ${year} ${hh}:${mm}:${ss}`;
+        }
+
+        update();
+        setInterval(update, 1000);
+    })();
+</script>
+
+</html>
